@@ -30,6 +30,7 @@ jobs:
       - name: Cache build tools
         uses: actions/cache@v4
         with:
+          submodules: recursive
           path: |
             tools/bin2c/bin2c
             tools/gbafix/gbafix
